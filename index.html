@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    HOLA
+  </div>
+  <div>
+    <p>Fecha limite de programacion 25/Aug/2024</p>
+    <p>Maximo de materias para programar:7</p>
+    <p>Maximo de materias paralelas para programar:2</p>
+    <div>
+      <div role="tabpanel">
+        <ul role="tablist">
+          <li role="Normal"><a href="https://estudiantes.uatf.edu.bo/programacionnormal/2024/2/0">Normal</a></li>
+          <li role="INGENIERIA DE SOFTWARE"><a href="https://estudiantes.uatf.edu.bo/programacionnormal/2024/2/1">INGENIERIA DE SOFTWARE</a></li>
+          <li role="TECNOLOGIA DE INFORMACION"><a href="https://estudiantes.uatf.edu.bo/programacionnormal/2024/2/2">TECNOLOGIA DE INFORMACION</a></li>
+          <li role="REDES Y CYBERSEGURIDAD"><a href="https://estudiantes.uatf.edu.bo/programacionnormal/2024/2/3">REDES Y CYBERSEGURIDAD</a></li>
+        </ul>
+        <div>
+          <div role="tabpanel">
+            <form method="POST" action="https://estudiantes.uatf.edu.bo/programacionnormalPost" accept-charset="UTF-8">
+              <input type="hidden">
+              <input type="hidden">
+              <input type="hidden">
+              <input type="hidden">
+              <table>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox"></th>
+                    <th>#</th>
+                    <th>Sigla</th>
+                    <th>Nivel</th>
+                    <th>Materias</th>
+                    <th>Grupo</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td colspan="6">programacion NORMAL</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>1</td>
+                    <td>INF870</td>
+                    <td>8</td>
+                    <td>PREPARACION Y EVALUACION DE PROYECTOS</td>
+                    <td>
+                      <select>
+                        <option disabled="" selected="">No programar</option>
+                        <option>Grupo 1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>2</td>
+                    <td>INF840</td>
+                    <td>8</td>
+                    <td>INFORMATICA FORENSE</td>
+                    <td>
+                      <select>
+                        <option disabled="" selected="">No programar</option>
+                        <option>Grupo 1</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td>3</td>
+                    <td>INF871</td>
+                    <td>8</td>
+                    <td>SEMINARIO DE GRADUACION</td>
+                    <td>
+                      <select>
+                        <option disabled="" selected="">No programar</option>
+                        <option>Grupo 2</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                <button type="reset">Limpiar Toda la programacion</button>
+                <button type="submit">Programar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/* Estilos del contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos internos de las tarjetas */
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos de los botones */
+.btn {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-view {
+    background: linear-gradient(to right, #38a169, #319795);
+}
+
+.btn-view:hover {
+    background: linear-gradient(to right, #2f855a, #2c7a7b);
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    background: linear-gradient(to right, #ecc94b, #ed8936);
+}
+
+.btn-edit:hover {
+    background: linear-gradient(to right, #d69e2e, #dd6b20);
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background: linear-gradient(to right, #e53e3e, #d53f8c);
+}
+
+.btn-delete:hover {
+    background: linear-gradient(to right, #c53030, #b83280);
+    transform: scale(1.05);
+}
